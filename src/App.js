@@ -56,8 +56,8 @@ return (
   <div className='row'>
   {data.map((item) =>(
     <div className='col-md-3 gif-item'>
-    <a href={item.images.original.url} target='_blank' rel="noreferrer">
-  <img src={item.images.original.url} alt="Image description" />
+    <a href={item.images.original.url} target='_blank'>
+  <img src={item.images.original.url} />
 </a>
     <a href={item.user?.profile_url} target='_blank' className='user-area'>
     <img src={item.user?.avatar_url} style={{width:50,height:50,borderRadius:100}} />
@@ -82,37 +82,3 @@ export default App;
 
 
 
-// return (
-//   <div className="App">
- 
-//   <div className='search-area'>
-//   <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder='Search...'/>
-//   <button onClick={search}
-//   >Search</button>
-//   </div>
-//   <div className='content'>
-//   <div className='container'>
-//   <h1>{title}</h1>
-
-//   <div className='row'>
-//   {data.map((item) =>(
-//     <div className='col-md-3 gif-item'>
-//     <a href={item.images.original.url} target='_blank'><img src={item.images.original.url}/></a>
-//     <a href={item.user?.profile_url} target='_blank' className='user-area'/>
-//     <img src={item.user?.avatar_url} style={{width:50,height:50,borderRadius:100}}>
-//     <span>{item.user?.display_name}</span>
-//     </a>
-    
-//     </div>
-//       ))}
-//       </div>
-//       </div>
-//       </div>
-//       </div>
-    
-//       );
-      
-// }
-
-
-// export default App;

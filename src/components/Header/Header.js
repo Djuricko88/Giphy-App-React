@@ -1,3 +1,4 @@
+
 import '../Header/Header.css';
 
 const Header = () => {
@@ -5,7 +6,7 @@ const Header = () => {
     <div>
     <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Giphy App</a>
+      <h1 class="navbar-brand">Giphy App</h1>
     </div>
   </nav>
     </div>
